@@ -37,6 +37,7 @@ modules:
       - install -D shadowpc.sh /app/bin/shadow-launcher.sh
       - install -D apply_extra -t /app/bin
       - install -Dm644 flatpak-warning.txt -t /app/share/shadowpc
+      - install -Dm644 shadow-launcher.desktop -t /app/share/applications
       - cp /usr/bin/ar /app/bin
       - cp /usr/lib/x86_64-linux-gnu/libsframe.so.1 /app/lib
       - ARCH_TRIPLE=$(gcc --print-multiarch) && cp /usr/lib/${ARCH_TRIPLE}/libbfd-*.so
@@ -55,6 +56,8 @@ modules:
         path: shadowpc.sh
       - type: file
         path: flatpak-warning.txt
+      - type: file
+        path: shadow-launcher.desktop
       - type: extra-data
         filename: "shadow-amd64.deb"
         url: "https://update.shadow.tech/launcher/prod/linux/x86_64/shadow-amd64.deb"

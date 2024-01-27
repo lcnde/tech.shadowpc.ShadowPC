@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Shadow PC
+Comment=Shadow client app for video streaming.
+GenericName=Streaming App
+Exec=shadow-launcher.sh %U
+Terminal=false
+Icon=/usr/share/pixmaps/shadow.png
+Type=Application
+Categories=AudioVideo;Audio;Video;Player;TV;
+MimeType=x-scheme-handler/tech.shadow;
+Keywords=shadow;
