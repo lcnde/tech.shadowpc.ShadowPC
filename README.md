@@ -6,6 +6,10 @@
 These 2 commands are necessary otherwise the script inside sources would not be able to unpack the `.deb` file. The first one is the `ar` gnu utility, it is part of the `binutils` utilities. It is already installed on most linux systems, in fact the flatpak build commands are copying it from the host linux system, and transfers it inside flatpak environment.
 The second `cp` command is a library that is necessary for the `ar` command to work.
 
+To find the location for the libsframe.so.1 library, you can use
+```
+$ apt-file search libsframe.so.1
+```
 
 # Obsolete code
 ```
