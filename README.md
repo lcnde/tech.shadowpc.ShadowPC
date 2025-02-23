@@ -1,4 +1,9 @@
-# Build-commands
+# README
+
+I was able to make Shadow start, but the connection to remote was not working. Unfortunately the flatpak is not in a working state due to lack of time for making it.
+
+## Build-commands
+
 ```yaml
 - cp /usr/bin/ar /app/bin
 - cp /usr/lib/x86_64-linux-gnu/libsframe.so.1 /app/lib
@@ -11,7 +16,8 @@ To find the location for the libsframe.so.1 library, you can use
 $ apt-file search libsframe.so.1
 ```
 
-# Obsolete code
+## Obsolete code
+
 ```
   # - name: binutils
   #   buildsystem: autotools
